@@ -5,7 +5,7 @@
 - Django 2.1
 - PostgreSQL
 
-## Como ejecutar en Linux
+## Cómo ejecutar en Linux
 Clonar proyecto
 ```
 $ mkdir ~/proyecto-acs-django
