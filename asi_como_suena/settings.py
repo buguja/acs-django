@@ -56,7 +56,7 @@ ROOT_URLCONF = 'asi_como_suena.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'resources/views/')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
