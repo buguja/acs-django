@@ -1,0 +1,26 @@
+{
+  "name": "asi_como_suena",
+  "version": "1.0.0",
+  "description": "## Requerimientos - Python 3 - Django 2.1 - PostgreSQL",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buguja/acs-django.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/buguja/acs-django/issues"
+  },
+  "homepage": "https://github.com/buguja/acs-django#readme",
+  "devDependencies": {
+    "laravel-mix": "^2.1.14"
+  }
+}
