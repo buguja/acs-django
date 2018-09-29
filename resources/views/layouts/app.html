@@ -5,19 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{% block title %} App Name {% endblock %}</title>
+    <meta name="csrf-token" content="{% csrf_token %}">
+    <title>{{ title }}</title>
     {% block styles %}
         <link rel="stylesheet" href="{% static 'css/app.css' %}">
-	{% endblock %}
+    {% endblock %}
 </head>
-<body>
-    <div id="app">
-        {% block content %} 
-        {% endblock %}
+
+<body class="hold-transition sidebar-mini">
+    <div id="app" class="h-100">
+        <div class="wrapper">
+            {% include "layouts/navbar.html" %}
+            {% include 'layouts/main-sidebar.html' %}
+            
+            <div class="content-wrapper">
+                {% include 'layouts/content-wrapper.html' %}
+                <div class="content">{% block content %}{% endblock %}</div>
+                {% include 'layouts/control-sidebar.html' %}
+            </div>
+            {% include 'layouts/footer.html' %}
+        </div>
     </div>
-    
+
     {% block scripts %} 
         <script src="{% static 'js/app.js' %}"></script>
-    {% endblock %}
+    {% endblock %} 
 </body>
 </html>
