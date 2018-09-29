@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{% block title %} App Name {% endblock %}</title>
     {% block styles %}
-        <!-- <link rel="stylesheet" href=""> -->
+        <link rel="stylesheet" href="{% static 'css/app.css' %}">
 	{% endblock %}
 </head>
 <body>
@@ -17,7 +17,7 @@
     </div>
     
     {% block scripts %} 
-        <!-- <script src=""></script> -->
+        <script src="{% static 'js/app.js' %}"></script>
     {% endblock %}
 </body>
 </html>
